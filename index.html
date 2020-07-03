@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Order List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/7b8d079fb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Umeda Customer Order List</h1>
+
+    <section id="inputSection">
+
+        <div class="container">
+
+            <form>
+
+                <div class="form-row">
+
+
+                    <div class="form-group col-sm-2">
+                        <label for="mekaname">メーカー名</label>
+                        <select class="form-control" id="mekaname">
+                            <option>N/A</option>
+                            <option>GULL</option>
+                            <option>タバタ</option>
+                            <option>AQUALUNG</option>
+                            <option>ATOMIC</option>
+                            <option>GRUSH</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group col-sm-5">
+                        <label for="itemname">商品名</label>
+                        <input type="text" class="form-control" id="itemname" placeholder="item name">
+                    </div>
+
+
+                    <div class="form-group col-sm-1">
+                        <label for="size">SIZE</label>
+                        <input type="text" class="form-control" id="size" placeholder="size">
+                    </div>
+
+
+                    <div class="form-group col-sm-1">
+                        <label for="color">カラー</label>
+                        <input type="text" class="form-control" id="color" placeholder="color">
+                    </div>
+
+
+                    <div class="form-group col-sm-1">
+                        <label for="qu">数量</label>
+                        <input type="number" class="form-control" id="numbers">
+                    </div>
+
+
+                    <div class="form-group col-sm-2">
+                        <label for="needorder">発注</label>
+                        <select class="form-control" id="needorder">
+                            <option>必要!</option>
+                            <option>なし#</option>
+                        </select>
+                    </div>
+
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group col-sm-2">
+                        <label for="customername">お客様名</label>
+                        <input type="text" class="form-control" id="customername" placeholder="customer name">
+                    </div>
+
+
+                    <div class="form-group col-sm-2">
+                        <label for="deadline">納品希望日</label>
+                        <input type="date" class="form-control" id="deadline">
+                    </div>
+
+
+                    <div class="form-group col-sm-1">
+                        <label for="visitshop">来店/発送</label>
+                        <select class="form-control" id="visitshop">
+                            <option>来店</option>
+                            <option>発送</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group col-sm-2">
+                        <label for="othermic">他店確認</label>
+                        <select class="form-control" id="othermic">
+                            <option>N/A</option>
+                            <option>cde</option>
+                            <option>efg</option>
+                            <option>hji</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group col-sm-1">
+                        <label for="staffs">担当者</label>
+                        <select class="form-control" id="staffs">
+                            <option>N/A</option>
+                            <option>風巻</option>
+                            <option>ccc</option>
+                            <option>ddd</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group col-sm-4">
+                        <label for="remarks">備考欄</label>
+                        <input type="text" class="form-control" id="remarks" placeholder="remarks">
+                    </div>
+
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-warning">Reset</button>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="searchSection">
+
+        <div class="container input-group">
+
+            <input type="text" placeholder="search order" class="form-control">
+
+            <div class="input-group-append">
+                <button class="btn btn-primary unshowbutton">Unshow Finished</button>
+            </div>
+
+            <div class="input-group-append">
+                <button class="btn btn-warning showbutton">Show Finished</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="displaySection">
+
+        <div class="container">
+
+            <ul class="list-group">
+         
+            </ul>
+        </div>
+
+
+    </section>
+
+
+
+    <script src="sandbox.js"></script>
+</body>
+
+</html>
